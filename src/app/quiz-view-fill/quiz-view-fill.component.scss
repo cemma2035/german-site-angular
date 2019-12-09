@@ -1,0 +1,16 @@
+.quiz-body {
+  .quiz-actual {
+    min-height: 40vh;
+    .quiz-instructions {
+      .bg-primary {
+        color: white;
+        border-radius: 5px;
+      }
+    }
+    .quiz-options {
+      .box-to-fill {
+          min-height: 20vh;
+      }
+    }
+  }
+}

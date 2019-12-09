@@ -1,0 +1,24 @@
+.navbar-brand {
+    color: #A9A094;
+}
+.quiz-full {
+    min-height: 90vh;
+    .quiz-title {
+        height: 10vh;
+        background: #A9A094;
+        color: white;
+    }
+    .quiz-image {
+        height: 60vh;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .quiz-number {
+        h3 {
+            color: #A9A094;
+        }
+    }
+}

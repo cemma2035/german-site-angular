@@ -1,0 +1,27 @@
+<!-- <ng-template #content let-modal>
+    <div class="modal-header">
+    </div>
+    <div class="modal-body">
+        <p class="text-center">Alert text will be displayed here</p>
+    </div>
+  </ng-template>
+  
+  <button id="openModalButton" class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button> -->
+
+  <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alertModal">
+    Launch demo modal
+  </button>
+   -->
+  <!-- Modal -->
+  <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        <div class="modal-body text-center">
+          <p class="" #errormessage class="text-center">{{ responseData }}</p>
+          <span class="text-center" *ngIf="redirect=='yes'">Redirecting in {{ redirectCount }}</span>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+@import '../../styles.scss';
+
+.our-nav{
+    background: $transparent-bg;
+}
+.navbar-brand{
+    color: white;
+    &:hover{
+        color: yellow;
+    }
+}
+.nav-item .nav-link{
+    color: white !important;
+}
+.german-btn{
+    @include app-buttons(inherit, grey, grey)
+}
+.english-btn {
+    @include app-buttons(grey, inherit, grey)
+}

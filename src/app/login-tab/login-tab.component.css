@@ -1,0 +1,40 @@
+.form-full {
+  height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/Images/german-building-flag.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/Images/german-building-flag.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid transparent;
+}
+
+.form-full .form-con {
+  min-height: 60%;
+  background: white;
+  border-radius: 10px;
+  margin-top: 17vh;
+}
+
+.form-full .form-con form a {
+  color: grey;
+  font-size: 10px;
+}
+
+.form-full .form-con form a:hover {
+  color: black;
+}
+
+.form-full .form-con form input {
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 0px;
+}
+
+.form-full .form-con form input:active, .form-full .form-con form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-full .form-con form .form-check label {
+  font-size: 12px;
+}
+/*# sourceMappingURL=login-tab.component.css.map */

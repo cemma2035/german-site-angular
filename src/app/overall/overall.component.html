@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="tabset-con mt-3">
+            <ngb-tabset activeId="{{ selectedTab }}" #tabset="ngbTabset" class="nav-fill"
+                type="pills">
+                <ngb-tab id="lang-tab">
+                    <ng-template ngbTabTitle><span class="tabs-title">German Language</span></ng-template>
+                    <ng-template ngbTabContent>
+                        <app-german-lang-tab></app-german-lang-tab>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab id="enroll-tab">
+                    <ng-template ngbTabTitle class="tabs-title">Enroll</ng-template>
+                    <ng-template ngbTabContent>
+                        <app-enroll-tab></app-enroll-tab>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab id="blog-tab">
+                    <ng-template ngbTabTitle class="tabs-title">Blog</ng-template>
+                    <ng-template ngbTabContent>
+                        <app-blog-tab></app-blog-tab>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab id="login-tab">
+                    <ng-template ngbTabTitle class="tabs-title">Login</ng-template>
+                    <ng-template ngbTabContent>
+                        <app-login-tab></app-login-tab>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab id="results-tab">
+                    <ng-template ngbTabTitle class="tabs-title">Results</ng-template>
+                    <ng-template ngbTabContent>
+                        <app-results-tab></app-results-tab>
+                    </ng-template>
+                </ngb-tab>
+            </ngb-tabset>
+        </div>
+    </div>
+</div>

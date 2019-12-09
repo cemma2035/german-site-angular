@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "https://simsapi.herokuapp.com/api/enroll",
+      "secure": false
+    }
+  }

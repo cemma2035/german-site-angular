@@ -1,0 +1,52 @@
+.container-fluid {
+  font-family: 'Nunito', sans-serif;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url(../../assets/Images/index-bg.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../../assets/Images/index-bg.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.index-links {
+  height: 15vh;
+  margin-top: 35vh;
+}
+
+.index-links .link h3 {
+  color: white;
+  font-weight: bold;
+}
+
+.index-links .link h3:hover {
+  -webkit-animation: scaleUp .2s linear forwards;
+          animation: scaleUp .2s linear forwards;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.index-links .link h3:focus {
+  outline: none;
+}
+
+@-webkit-keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+/*# sourceMappingURL=landing-page.component.css.map */

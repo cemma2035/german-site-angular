@@ -1,0 +1,76 @@
+.profile-full {
+  min-height: 91vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/Images/profilebg-temp.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Images/profilebg-temp.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-full .data-con {
+  max-height: 84vh;
+  color: white;
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+}
+
+.profile-full .data-con .user-image {
+  height: 35vh;
+  width: 35vh;
+}
+
+.profile-full .data-con .user-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile-full .edit-information {
+  max-height: 84vh;
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+}
+
+.profile-full .edit-password {
+  max-height: 60vh;
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+}
+
+.profile-full form {
+  color: white;
+}
+
+.profile-full form input,
+.profile-full form select {
+  color: white;
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+}
+
+.profile-full form input:active, .profile-full form input:focus,
+.profile-full form select:active,
+.profile-full form select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.profile-full form input option,
+.profile-full form select option {
+  color: white;
+  background: black;
+}
+
+.profile-full form input option:hover,
+.profile-full form select option:hover {
+  color: black;
+  background: white;
+}
+
+.profile-full form button {
+  border: 1px solid white;
+  background: inherit;
+  color: white;
+}
+/*# sourceMappingURL=profile.component.css.map */

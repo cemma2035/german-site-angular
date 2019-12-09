@@ -1,0 +1,108 @@
+@import "../../media-queries";
+@mixin einstein-carousel() {
+  @include small-screens {    
+    height: 40vh;
+ }
+  @include large-screens {    
+    height: 80vh;
+ }
+  background-position: center;
+  background-size: cover;
+  animation: bg-zoom 3s linear forwards;
+}
+@mixin einstein-tab($tab-height) {
+  cursor: pointer;
+  height: $tab-height;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  &:hover {
+    animation: bg-zoom 1s linear forwards;
+  }
+}
+.container-fluid {
+  font-family: "Nunito", sans-serif;
+}
+.carousel-words {
+  @include small-screens {    
+    padding-top: 17vh;
+ }
+  @include large-screens {    
+    padding-top: 35vh;
+ }
+  color: white;
+  font-weight: bold;
+  filter: opacity(0.8);
+}
+.first-pic {
+  @include einstein-carousel();
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../../assets/Images/collab.jpg");
+}
+.second-pic {
+  @include einstein-carousel();
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../../assets/Images/slide-2.jpg");
+}
+.third-pic {
+  @include einstein-carousel();
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../../assets/Images/slide-3.jpg");
+}
+.nav-tabs-con {
+  min-height: 50vh;
+}
+.german-lang-tab {
+  @include einstein-tab(45vh);
+  background-image: url("../../assets/Images/for-language.jpg");
+}
+.enroll-tab {
+  @include einstein-tab(21vh);
+  background-image: url("../../assets/Images/for-enroll.jpg");
+}
+.blog-tab {
+  @include einstein-tab(21vh);
+  background-image: url("../../assets/Images/for-blog.jpg");
+}
+.login-tab {
+  @include einstein-tab(21vh);
+  background-image: url("../../assets/Images/for-login.jpg");
+}
+.results-tab {
+  @include einstein-tab(25vh);
+  background-image: url("../../assets/Images/for-results.jpg");
+}
+.tab-identify {
+  height: 4vh;
+  min-width: 5vw;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@keyframes bg-zoom {
+  0% {
+    background-size: cover;
+  }
+  25% {
+    background-size: 105%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  75% {
+    background-size: 115%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}

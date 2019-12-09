@@ -1,0 +1,28 @@
+.page-footer {
+  color: white;
+  min-height: 50vh;
+  background-color: darkslateblue;
+}
+
+.footer-rest {
+  min-height: 40vh;
+}
+
+.page-footer a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.page-footer ul {
+  list-style-type: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ul-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+/*# sourceMappingURL=footer.component.css.map */

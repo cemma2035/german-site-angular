@@ -1,0 +1,52 @@
+.enroll-full {
+  height: 90vh;
+}
+
+@media (max-width: 767px) {
+  .enroll-full .enroll-left {
+    display: none;
+  }
+}
+
+.enroll-full .enroll-left .enroll-tab-images {
+  height: 50%;
+}
+
+.enroll-full .enroll-left .enroll-tab-images .image-con {
+  height: 70%;
+  width: 100%;
+}
+
+.enroll-full .enroll-left .enroll-tab-images .image-con img {
+  height: 100%;
+  width: 100%;
+}
+
+.enroll-full .enroll-left .enroll-tab-images p {
+  font-size: 18px;
+}
+
+.enroll-full .enroll-header {
+  height: 25%;
+}
+
+.enroll-full .enroll-header .user-image {
+  height: 20vh;
+  width: 20vh;
+}
+
+.enroll-full .enroll-header .user-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.enroll-full .enroll-form-con {
+  height: 75%;
+}
+
+.enroll-full .enroll-form-con input,
+.enroll-full .enroll-form-con select {
+  border-radius: 0px;
+}
+/*# sourceMappingURL=enroll-tab.component.css.map */

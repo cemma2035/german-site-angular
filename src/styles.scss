@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/css?family=Nunito&display=swap";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./variables";
+@import "./media-queries";
+
+
+@mixin app-buttons($color, $background, $border-color) {
+  color: $color;
+  background: $background;
+  border: 1px solid $border-color;
+  &:hover {
+    background: $color;
+    color: $background;
+  }
+}
+
+.scroller {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    color: black;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #343a40;
+    display: none;
+  }
+}
+.container-fluid {
+  font-family: "Nunito", sans-serif;
+}
+.bold {
+  font-weight: bold;
+}

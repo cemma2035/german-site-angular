@@ -1,0 +1,54 @@
+.tab-full {
+  min-height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/Images/studying.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/Images/studying.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tab-full .tab-header {
+  min-height: 15%;
+}
+
+.tab-full .tab-header h3 {
+  color: white;
+}
+
+.tab-full .tab-more-info {
+  min-height: 85%;
+}
+
+.tab-full .tab-more-info .info-box {
+  height: 20vh;
+  background: white;
+  border-radius: 10px;
+}
+
+.tab-full .tab-more-info .info-box .info-title {
+  height: 20%;
+}
+
+.tab-full .tab-more-info .info-box .info-content {
+  height: 50%;
+}
+
+.tab-full .tab-more-info .info-box .info-content p {
+  font-size: 12px;
+}
+
+.tab-full .tab-more-info .info-box .info-learn-more {
+  height: 30%;
+}
+
+.tab-full .tab-more-info .info-box .info-learn-more a {
+  font-size: 12px;
+  background: grey;
+  border-radius: 5px;
+  color: white;
+}
+
+.tab-full .tab-more-info .info-box .info-learn-more a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+/*# sourceMappingURL=german-lang-tab.component.css.map */

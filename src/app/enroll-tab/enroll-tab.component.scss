@@ -1,0 +1,43 @@
+@import "../../media-queries";
+
+.enroll-full {
+  height: 90vh;
+  .enroll-left {
+    @include small-screens {    
+      display: none;
+   }
+    .enroll-tab-images {
+      height: 50%;
+      .image-con {
+        height: 70%;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .enroll-header {
+    height: 25%;
+    .user-image {
+      height: 20vh;
+      width: 20vh;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+  .enroll-form-con {
+    height: 75%;
+    input,
+    select {
+      border-radius: 0px;
+    }
+  }
+}

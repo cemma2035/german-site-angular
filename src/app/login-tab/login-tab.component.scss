@@ -1,0 +1,35 @@
+.form-full {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("../../assets/Images/german-building-flag.jpeg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid transparent;
+    .form-con {
+        min-height: 60%;
+        background: white;
+        border-radius: 10px;
+        margin-top: 17vh;
+        form {
+            a {
+                color: grey;
+                font-size: 10px;
+                &:hover{
+                    color: black;
+                }
+            }
+            input {
+                border: none;
+                border-bottom: 1px solid lightgrey;
+                border-radius: 0px;
+                &:active, &:focus {
+                    box-shadow: none;
+                }
+            }
+            .form-check{
+                label {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

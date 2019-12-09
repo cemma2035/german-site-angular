@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <div class="row">
+        <app-search-navbar class="col-12 px-0"></app-search-navbar>
+        <ngb-carousel class="col-12 px-0">
+            <ng-template class="slides" ngbSlide>
+                <div class="first-pic">
+                    <h2 class="text-center carousel-words">einstein sprachschule</h2>
+                </div>
+            </ng-template>
+            <ng-template class="slides" ngbSlide>
+                <div class="second-pic">
+                    <h2 class="text-center carousel-words">einstein sprachschule</h2>
+                </div>
+            </ng-template>
+            <ng-template class="slides" ngbSlide>
+                <div class="third-pic">
+                    <h2 class="text-center carousel-words">einstein sprachschule</h2>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+        <div class="col-12 nav-tabs-con row mt-3 px-0 mx-0">
+            <div class="col-xl-11 mt-2 mx-auto row">
+                <div class="col-12 col-md german-lang-tab mr-2 mt-2" (click)="storeLangTab()" routerLink="/overall">
+                    <div class="tab-identify px-2 text-center m-1">
+                        <a href="over.html#german-lang-tab"><span style="font-size: 12px;">German
+                                Language</span></a>
+                    </div>
+                </div>
+                <div class="enroll-blog-login col-12 col-md mt-2 row">
+                    <div class="enroll-tab mb-3 col-12" (click)="storeEnrollTab()" routerLink="/overall">
+                        <div class="tab-identify px-2 text-center m-1">
+                            <a href="over.html#enroll-tab"><span style="font-size: 12px;">Enroll</span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md mt-2 blog-tab mr-2" (click)="storeBlogTab()" routerLink="/overall">
+                        <div class="tab-identify px-2 text-center m-1">
+                            <a href="over.html#blog-tab"><span style="font-size: 12px;">Blog</span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md mt-2 login-tab" (click)="storeLoginTab()" routerLink="/overall">
+                        <div class="tab-identify px-2 text-center m-1">
+                            <a href="over.html#login-tab"><span style="font-size: 12px;">Login</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 results-tab mt-3 mb-5" (click)="storeResultsTab()" routerLink="/overall">
+                    <div class="tab-identify px-2 text-center m-1">
+                        <a href="over.html#results-tab"><span style="font-size: 12px;">Results</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-3 mb-3">
+            <h4 class="text-center">Our Gallery</h4>
+        </div>
+        <!-- <app-our-gallery class="col-11 mx-auto px-0"></app-our-gallery> -->
+        <app-footer class="col-12 px-0"></app-footer>
+    </div>
+</div>

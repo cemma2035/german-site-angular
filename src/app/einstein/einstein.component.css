@@ -1,0 +1,224 @@
+.container-fluid {
+  font-family: "Nunito", sans-serif;
+}
+
+.carousel-words {
+  color: white;
+  font-weight: bold;
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+}
+
+@media (max-width: 767px) {
+  .carousel-words {
+    padding-top: 17vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-words {
+    padding-top: 35vh;
+  }
+}
+
+.first-pic {
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: bg-zoom 3s linear forwards;
+          animation: bg-zoom 3s linear forwards;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/Images/collab.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/Images/collab.jpg");
+}
+
+@media (max-width: 767px) {
+  .first-pic {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .first-pic {
+    height: 80vh;
+  }
+}
+
+.second-pic {
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: bg-zoom 3s linear forwards;
+          animation: bg-zoom 3s linear forwards;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/Images/slide-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/Images/slide-2.jpg");
+}
+
+@media (max-width: 767px) {
+  .second-pic {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .second-pic {
+    height: 80vh;
+  }
+}
+
+.third-pic {
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: bg-zoom 3s linear forwards;
+          animation: bg-zoom 3s linear forwards;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("../../assets/Images/slide-3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../assets/Images/slide-3.jpg");
+}
+
+@media (max-width: 767px) {
+  .third-pic {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .third-pic {
+    height: 80vh;
+  }
+}
+
+.nav-tabs-con {
+  min-height: 50vh;
+}
+
+.german-lang-tab {
+  cursor: pointer;
+  height: 45vh;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  background-image: url("../../assets/Images/for-language.jpg");
+}
+
+.german-lang-tab:hover {
+  -webkit-animation: bg-zoom 1s linear forwards;
+          animation: bg-zoom 1s linear forwards;
+}
+
+.enroll-tab {
+  cursor: pointer;
+  height: 21vh;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  background-image: url("../../assets/Images/for-enroll.jpg");
+}
+
+.enroll-tab:hover {
+  -webkit-animation: bg-zoom 1s linear forwards;
+          animation: bg-zoom 1s linear forwards;
+}
+
+.blog-tab {
+  cursor: pointer;
+  height: 21vh;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  background-image: url("../../assets/Images/for-blog.jpg");
+}
+
+.blog-tab:hover {
+  -webkit-animation: bg-zoom 1s linear forwards;
+          animation: bg-zoom 1s linear forwards;
+}
+
+.login-tab {
+  cursor: pointer;
+  height: 21vh;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  background-image: url("../../assets/Images/for-login.jpg");
+}
+
+.login-tab:hover {
+  -webkit-animation: bg-zoom 1s linear forwards;
+          animation: bg-zoom 1s linear forwards;
+}
+
+.results-tab {
+  cursor: pointer;
+  height: 25vh;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  background-image: url("../../assets/Images/for-results.jpg");
+}
+
+.results-tab:hover {
+  -webkit-animation: bg-zoom 1s linear forwards;
+          animation: bg-zoom 1s linear forwards;
+}
+
+.tab-identify {
+  height: 4vh;
+  min-width: 5vw;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.tab-identify a {
+  color: white;
+  text-decoration: none;
+}
+
+@-webkit-keyframes bg-zoom {
+  0% {
+    background-size: cover;
+  }
+  25% {
+    background-size: 105%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  75% {
+    background-size: 115%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+
+@keyframes bg-zoom {
+  0% {
+    background-size: cover;
+  }
+  25% {
+    background-size: 105%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  75% {
+    background-size: 115%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+/*# sourceMappingURL=einstein.component.css.map */

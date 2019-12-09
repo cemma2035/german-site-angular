@@ -1,0 +1,86 @@
+.profile-full {
+  min-height: 91vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/Images/profilebg-temp.jpg");
+  background-size: cover;
+  background-position: center;
+  .data-con {
+    max-height: 84vh;
+    color: white;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    .user-image {
+      height: 35vh;
+      width: 35vh;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 3px solid white;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      ng-template {
+        .default-image {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          border: 3px solid white;
+          object-fit: cover;
+        }
+      }
+    }
+    .overlay {
+      height: 35vh;
+      width: 35vh;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.7);
+      position: relative;
+      bottom: 35vh;
+      left: 0px;
+      i {
+        margin-top: 40%;
+        color: grey;
+      }
+    }
+  }
+  .edit-information {
+    max-height: 84vh;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+  }
+  .edit-password {
+    max-height: 60vh;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+  }
+  form {
+    color: white;
+    input,
+    select {
+      color: white;
+      background: inherit;
+      border: none;
+      border-bottom: 1px solid white;
+      border-radius: 0px;
+      &:active,
+      &:focus {
+        box-shadow: none;
+      }
+      option {
+        color: white;
+        background: black;
+        &:hover {
+          color: black;
+          background: white;
+        }
+      }
+    }
+    button {
+      border: 1px solid white;
+      background: inherit;
+      color: white;
+    }
+  }
+}

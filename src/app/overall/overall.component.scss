@@ -1,0 +1,15 @@
+.container-fluid {
+  font-family: "Nunito", sans-serif;
+}
+:host ::ng-deep .nav-pills .nav-link {
+  color: grey;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+:host ::ng-deep .nav-pills .nav-link.active {
+  color: white;
+  background: grey;
+}
+.tabset-con{
+    width: 100%;
+}

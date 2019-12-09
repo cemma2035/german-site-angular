@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,WADO,CACP,aAAa,CAAA;EACT,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "search-navbar.component.scss"
+    ],
+    "names": [],
+    "file": "search-navbar.component.css"
+}

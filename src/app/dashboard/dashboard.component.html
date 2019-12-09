@@ -1,0 +1,39 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" class="active">
+        <div class="col-12 dash-logo mt-3">
+            <img class="ml-3" src="../images/logo.png" alt="" />
+        </div>
+        <ul class="list-unstyled components">
+            <li class="mt-4 current">
+                <a><i class="fa fas mr-3 fa-home"></i>Home</a>
+            </li>
+            <li class="mt-4">
+                <a><i class="fa fas mr-3 fa-user"></i>Take Test</a>
+            </li>
+            <li class="mt-4">
+                <a><i class="fa fas mr-3 fa-image"></i>Join Class</a>
+            </li> 
+            <li class="mt-4">
+                <a><i class="fa fas mr-3 fa-cogs"></i>Payments</a>
+            </li>
+            <li class="mt-4">
+                <a><i class="fa fas mr-3 fa-cogs"></i>Profile</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+        <button type="button" id="sidebarCollapse" class="btn sidebar-btn p-1 mt-2 ml-2">
+            <i class="fas fa fa-align-left"></i>
+        </button>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+            $("#sidebar").toggleClass("active");
+        });
+    });
+</script>

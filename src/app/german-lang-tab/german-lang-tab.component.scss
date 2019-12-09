@@ -1,0 +1,42 @@
+.tab-full{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("../../assets/Images/studying.jpg");
+    background-size: cover;
+    background-position: center;
+    .tab-header{
+        min-height: 15%;
+        h3{
+            color: white;
+        }
+    }
+    .tab-more-info{
+        min-height: 85%;
+        .info-box{
+            height: 20vh;
+            background: white;
+            border-radius: 10px;
+            .info-title {
+                height: 20%;
+            }
+            .info-content {
+                height: 50%;
+                p {
+                    font-size: 12px;
+                }
+            }
+            .info-learn-more{
+                height: 30%;
+                a {
+                    font-size: 12px;
+                    background: grey;
+                    border-radius: 5px;
+                    color: white;
+                    &:hover{
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
