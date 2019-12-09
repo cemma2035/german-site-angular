@@ -19,6 +19,7 @@ export class ApiService {
   editUserDetailsPath = 'https://simsapi.herokuapp.com/api/update';
   editPasswordPath = 'https://simsapi.herokuapp.com/api/password';
   uploadImagePath = 'https://simsapi.herokuapp.com/api/upload';
+  getQuestionPath = 'https://simsapi.herokuapp.com/api/question/1';
   apiResponse: any;
   token;
 
@@ -121,5 +122,12 @@ export class ApiService {
     return this.http
     .post(this.uploadImagePath, uploadImageData, this.httpOptionsForImage)
     .pipe(retry(1), catchError(this.handleError));
+  }
+
+  // Get Questions
+  getQuestion() {
+    return this.http
+      .get(this.getQuestionPath, this.httpOptionswithToken)
+      .pipe(retry(1), catchError(this.handleGetError));
   }
 }
