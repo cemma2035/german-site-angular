@@ -12,6 +12,8 @@ import { retry, catchError } from 'rxjs/operators';
 })
 export class ApiService {
   // API Path
+  questionNumber = 1;
+
   enrollPath = 'https://simsapi.herokuapp.com/api/enroll';
   loginPath = 'https://simsapi.herokuapp.com/api/login';
   forgotPath = 'https://simsapi.herokuapp.com/api/password/create';
@@ -19,7 +21,7 @@ export class ApiService {
   editUserDetailsPath = 'https://simsapi.herokuapp.com/api/update';
   editPasswordPath = 'https://simsapi.herokuapp.com/api/password';
   uploadImagePath = 'https://simsapi.herokuapp.com/api/upload';
-  getQuestionPath = 'https://simsapi.herokuapp.com/api/question/1';
+  getQuestionPath = `https://simsapi.herokuapp.com/api/question/`;
   apiResponse: any;
   token;
 
@@ -126,8 +128,10 @@ export class ApiService {
 
   // Get Questions
   getQuestion() {
+    console.log(this.questionNumber);
+    console.log(this.getQuestionPath + this.questionNumber);
     return this.http
-      .get(this.getQuestionPath, this.httpOptionswithToken)
+      .get(this.getQuestionPath + this.questionNumber, this.httpOptionswithToken)
       .pipe(retry(1), catchError(this.handleGetError));
   }
 }

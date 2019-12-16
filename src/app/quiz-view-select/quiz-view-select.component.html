@@ -1,23 +1,26 @@
-<div class="quiz-body col-12 col-md-8 mx-auto mt-3 border">
+<div *ngIf="questionData !==''; else LoadingBlock" class="quiz-body col-12 col-md-8 mx-auto mt-3 border">
     <h4>Question {{ questionData.id }}</h4>
     <p>{{ questionData.question_name }}</p>
     <div class="col-12 quiz-actual row mx-0">
-        <div class="col quiz-instructions">
-            <div class="bg-primary mt-4 px-3">
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        <div class="col-12 col-sm quiz-instructions">
+            <div *ngFor="let instruction of questionData.instructions" class="bg-primary mt-4 p-3">
+                <span>{{ instruction.instruction_name }}</span>
                 <i class="fa fas fa-volume-up fa-lg ml-3"></i>
             </div>
         </div>
-        <div class="col quiz-options mt-4">
-            <div class="col-12 mb-1 option text-center pt-3">
-                06.30 – 09.30 Uhr
+        <div class="col-12 col-sm quiz-options mt-4">
+            <div *ngFor="let answer of questionData.answers" class="col-12 mb-1 option text-center pt-3">
+                {{ answer.answer_name }}
             </div>
-            <div class="col-12 mb-1 option text-center pt-3">
+            <!-- <div class="col-12 mb-1 option text-center pt-3">
                 07.30 – 09.30 Uhr
             </div>
             <div class="col-12 mb-1 option text-center pt-3">
                 07.30 – 10.30 Uhr
-            </div>
+            </div> -->
         </div>
     </div>
+</div>
+<div #loadingBlock class="loading-block col-12 col-md-8 mx-auto border">
+    <p>wtaf</p>
 </div>

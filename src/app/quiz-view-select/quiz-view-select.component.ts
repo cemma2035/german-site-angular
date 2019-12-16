@@ -10,6 +10,7 @@ export class QuizViewSelectComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.questionData);
   }
 
   ngAfterViewInit() {

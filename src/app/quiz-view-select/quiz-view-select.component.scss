@@ -1,4 +1,5 @@
 .quiz-body {
+  background: #F4F3F1;
   .quiz-actual {
     min-height: 40vh;
     .quiz-instructions {
@@ -21,4 +22,7 @@
       }
     }
   }
+}
+.loading-block {
+  min-height: 40vh;
 }

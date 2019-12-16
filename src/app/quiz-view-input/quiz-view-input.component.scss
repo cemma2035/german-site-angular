@@ -1,0 +1,24 @@
+.quiz-body {
+  background: #F4F3F1;
+    .quiz-actual {
+      min-height: 40vh;
+      .quiz-instructions {
+        .bg-primary {
+          color: white;
+          border-radius: 5px;
+        }
+      }
+      .quiz-options {
+        .full-answer {
+            input {
+                border: none;
+                border-bottom: 1px solid black;
+            }
+        }
+      }
+    }
+  }
+  .loading-block {
+    min-height: 40vh;
+  }
+  

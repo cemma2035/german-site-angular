@@ -27,6 +27,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { QuizDashboardComponent } from './quiz-dashboard/quiz-dashboard.component';
 import { QuizViewSelectComponent } from './quiz-view-select/quiz-view-select.component';
 import { QuizViewFillComponent } from './quiz-view-fill/quiz-view-fill.component';
+import { QuizViewInputComponent } from './quiz-view-input/quiz-view-input.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { QuizViewFillComponent } from './quiz-view-fill/quiz-view-fill.component
     QuizComponent,
     QuizDashboardComponent,
     QuizViewSelectComponent,
-    QuizViewFillComponent
+    QuizViewFillComponent,
+    QuizViewInputComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +65,6 @@ import { QuizViewFillComponent } from './quiz-view-fill/quiz-view-fill.component
   ],
   providers: [ApiService],
   bootstrap: [AppComponent],
-  entryComponents: [QuizViewSelectComponent, QuizViewFillComponent]
+  entryComponents: [QuizViewSelectComponent, QuizViewFillComponent, QuizViewInputComponent]
 })
 export class AppModule { }
