@@ -23,7 +23,7 @@
     "@types/angular": "^1.6.56",
     "@types/jquery": "^3.3.31",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngx-bootstrap": "^5.2.0",
     "ngx-slick": "^0.2.1",
     "popper.js": "^1.16.0",
